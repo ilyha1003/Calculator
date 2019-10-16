@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<layout>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.sample.foo.samplecalculator.MainActivity">
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="right|center_vertical"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/input_text"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/infoTextView"
+            android:enabled="false"
+            android:gravity="bottom"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/buttonSeven"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_toRightOf="@id/buttonSeven"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_toRightOf="@id/buttonEight"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonFour"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSeven"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonEight"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonNine"
+            android:layout_below="@id/buttonNine"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonOne"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonFour"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/buttonTwo"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonFive"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/buttonThree"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonNine"
+            android:layout_below="@id/buttonSix"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonOne"
+            android:text="." />
+
+        <Button
+            android:id="@+id/buttonZero"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonTwo"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/buttonEqual"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonNine"
+            android:layout_below="@id/buttonThree"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buttonNine"
+            android:layout_toRightOf="@id/buttonNine"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buttonSix"
+            android:layout_toRightOf="@id/buttonSix"
+            android:text="*"/>
+
+        <Button
+            android:id="@+id/buttonSubtract"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buttonThree"
+            android:layout_toRightOf="@id/buttonThree"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/buttonEqual"
+            android:layout_toRightOf="@id/buttonEqual"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/buttonMinusFirstDegree"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonDot"
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="16dp"
+            android:text="1/x" />
+
+        <Button
+            android:id="@+id/buttonSquaring"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonZero"
+            android:layout_marginTop="16dp"
+            android:text="х²" />
+
+        <Button
+            android:id="@+id/buttonCubing"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEqual"
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="16dp"
+            android:text="X³" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonAdd"
+            android:layout_below="@id/buttonAdd"
+            android:layout_marginTop="16dp"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/buttonFactorial"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonSeven"
+            android:layout_below="@id/buttonMinusFirstDegree"
+            android:text="X!" />
+
+        <Button
+            android:id="@+id/buttonSquareRoot"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonSquaring"
+            android:text="√" />
+
+        <Button
+            android:id="@+id/buttonLogarithm"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonNine"
+            android:layout_below="@id/buttonCubing"
+            android:text="log" />
+
+        <Button
+            android:id="@+id/buttonMod"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonDivide"
+            android:layout_below="@id/buttonClear"
+            android:text="Mod" />
+
+        <Button
+            android:id="@+id/buttonSinus"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonSeven"
+            android:layout_below="@id/buttonFactorial"
+            android:text="sin" />
+
+        <Button
+            android:id="@+id/buttonCosinus"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonEight"
+            android:layout_below="@id/buttonSquareRoot"
+            android:text="cos" />
+
+        <Button
+            android:id="@+id/buttonNaturalLogarithm"
+            style="@style/calc_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonNine"
+            android:layout_below="@id/buttonLogarithm"
+            android:text="ln" />
+
+        <Button
+            android:id="@+id/buttonExponentDegree"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/buttonDivide"
+            android:layout_below="@id/buttonMod"
+            android:text="exp(x)" />
+
+
+
+    </RelativeLayout>
+</layout>
